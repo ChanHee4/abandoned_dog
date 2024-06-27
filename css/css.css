@@ -13,6 +13,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'TheJamsil5Bold';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
 
 
 * {
@@ -131,7 +138,6 @@ body {
     margin: 100px auto;
     margin-bottom: 50px;
 }
-
 .url .method {
     margin-bottom: 50px;
 }
@@ -176,6 +182,7 @@ body {
     display: flex;
     gap: 30px;
     align-items: center;
+    margin-bottom: 10px;
 }
 
 .url .method .method_wrap .method_right .right1 a img {
@@ -186,6 +193,7 @@ body {
     display: flex;
     gap: 30px;
     align-items: center;
+    margin-bottom: 10px;
 }
 .url .method .method_wrap .method_right .right2 a img {
     width: 80px;
@@ -213,10 +221,11 @@ body {
     color: #1285DE;
     font-size: 3rem;
     margin-bottom: 10px;
+    font-family: 'TheJamsil5Bold';
 }
 .url .search .title .sub_title{
-    color: #FF0A0A;
-    font-size: 2rem;
+    color: #333;
+    font-size: 1.6rem;
     font-weight: lighter;
 }
 
@@ -259,6 +268,7 @@ body {
 }
 
 
+
 .friend {
     max-width: 1280px;
     width: calc(100% - 20px);
@@ -286,10 +296,11 @@ body {
     color: #1285DE;
     font-size: 3rem;
     margin-bottom: 10px;
+    font-family: 'TheJamsil5Bold';
 }
 .friend .title .sub_title{
-    color: #FF0A0A;
-    font-size: 2rem;
+    color: #333;
+    font-size: 1.6rem;
     font-weight: lighter;
 }
 
@@ -369,10 +380,11 @@ body {
     color: #1285DE;
     font-size: 3rem;
     margin-bottom: 10px;
+    font-family: 'TheJamsil5Bold';
 }
 .notice .title .sub_title {
-    color: #FF0A0A;
-    font-size: 2rem;
+    color: #333;
+    font-size: 1.6rem;
     font-weight: lighter;
 }
 .notice .title .right {
@@ -435,7 +447,8 @@ body {
     z-index: 9;
 }
 .notice .wrap .item .right {
-    width: 48%;
+    width: 50%;
+    padding: 10px;
 }
 .notice .wrap .item .right h4 {
     font-size: 2rem;
@@ -444,14 +457,15 @@ body {
 }
 .notice .wrap .item .right p {
     color: #FF0A0A;
-    margin-bottom: 10px;
 }
 .notice .wrap .item .right span {
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 11;
+    -webkit-line-clamp: 6;
     text-overflow: ellipsis;
     overflow: hidden;
+    margin-bottom: 10px;
+    line-height: 1.3;
 }
 
 
@@ -737,6 +751,6 @@ body {
         display: none;
     }
     .notice .wrap .item .right span {
-        -webkit-line-clamp: 6;
+        -webkit-line-clamp: 4;
     }
 }
